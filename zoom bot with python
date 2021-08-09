@@ -1,0 +1,46 @@
+def connect():
+    import webbrowser
+    import time
+    webbrowser.open("enter your class link here")
+    print('sleeping for 70 min' )
+    time.sleep(4200)
+    print('done sleeping')
+    zoom()
+def zoom():
+    import time
+    t = time.localtime()
+    c = time.strftime("%H.%M.%S", t)
+    print("time is", c)
+    while(1):
+        if(c>='09.15' and c<='10.15'):
+            connect()
+        elif(c>='10.30' and c<='11.30'):
+            connect()
+        elif(c>='11.45' and c<='12.45'):
+            connect()
+        elif(c>='13.30' and c<='14.29'):
+            print('sleep for 5 min')
+            time.sleep(300)
+            print('done sleep')
+            zoom()
+        elif(c>='13.30' and c<='14.30'):
+            connect()
+        elif (c >= '14.45' and c <= '15.45'):
+            connect()
+        elif(c>'15.50'):
+            exit()
+        elif(c<'09.15'):
+            print("sleep for 2 min")
+            time.sleep(120)
+            print("done sleep")
+            zoom()
+        else:
+            print("sleep for 2 min")
+            time.sleep(120)
+            print("done sleep")
+            zoom()
+zoom()
+
+
+
+
