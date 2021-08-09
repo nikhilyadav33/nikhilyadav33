@@ -1,0 +1,90 @@
+import turtle
+
+t = turtle.Turtle()
+turtle.bgcolor("black")
+t.pencolor("red")
+t.up()
+t.setheading(270)
+t.forward(100)
+t.setheading(360)
+t.down()
+# outer circle
+t.begin_fill()
+t.fillcolor("red")
+t.circle(200)
+t.end_fill()
+t.up()
+t.goto(0, -70)
+t.down()
+# inner circle
+t.begin_fill()
+t.fillcolor("black")
+t.circle(170)
+t.end_fill()
+t.begin_fill()
+t.fillcolor("red")
+# 1
+t.up()
+t.goto(-150, -95)
+t.down()
+t.setheading(360)
+t.left(69)
+t.forward(450)
+# 2
+t.right(70)
+t.forward(63)
+# 3
+t.right(90)
+t.forward(300)
+# 4
+t.up()
+t.forward(5)
+t.down()
+t.forward(68)
+# 5
+t.right(90)
+t.forward(45)
+# 6
+t.right(124)
+t.forward(81.8)
+# 7
+t.up()
+t.left(30)
+t.forward(5)
+t.down()
+t.left(45)
+t.forward(78)
+# 8
+t.right(40)
+t.forward(100)
+# 9
+t.left(160)
+t.forward(155)
+# 10
+t.left(110)
+t.forward(53)
+
+# 11
+t.left(90)
+t.forward(39)
+# 12
+t.right(140)
+t.forward(72)
+# 13
+t.right(75)
+t.forward(80)
+# 14
+t.right(145)
+t.forward(43)
+# 14
+t.left(90)
+t.forward(65)
+# 15
+t.left(70)
+t.forward(100)
+# 16
+t.right(70)
+t.forward(71)
+t.end_fill()
+t.hideturtle()
+turtle.done()
